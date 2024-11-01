@@ -971,5 +971,11 @@
         "example": "```markdown=12\nline1\n```\n```markdown=+\nline2\n```\n```markdown=\nline3\n```"
       }
     }
+  },
+  "print": {
+    "warning": {
+      "title": "Warning!",
+      "text": "To print this note, please use the print button in the export menu in the sidebar. Printing this page directly will not work as expected."
+    }
   }
 }

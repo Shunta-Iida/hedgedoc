@@ -177,11 +177,14 @@ export const RendererIframe: React.FC<RendererIframeProps> = ({
     <Fragment>
       {!rendererReady && showWaitSpinner && <WaitSpinner />}
       <iframe
+        id={'editor-renderer-iframe'}
         style={{ height: `${frameHeight}px` }}
         {...cypressId('documentIframe')}
         onLoad={onIframeLoad}
         title='render'
-        {...(isTestMode ? {} : { sandbox: 'allow-downloads allow-same-origin allow-scripts allow-popups' })}
+        {...(isTestMode
+          ? {}
+          : { sandbox: 'allow-downloads allow-same-origin allow-scripts allow-popups allow-modals' })}
         allowFullScreen={true}
         ref={frameReference}
         referrerPolicy={'no-referrer'}

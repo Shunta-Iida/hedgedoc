@@ -8,13 +8,14 @@ import { SidebarButton } from '../../../sidebar-button/sidebar-button'
 import React, { useCallback } from 'react'
 import { PrinterFill as IconPrinterFill } from 'react-bootstrap-icons'
 import { Trans } from 'react-i18next'
+import { printIframe } from '../../../../utils/print-iframe'
 
 /**
  * Editor sidebar entry for exporting the markdown content into a local file.
  */
 export const ExportPrintSidebarEntry: React.FC = () => {
   const onClick = useCallback(() => {
-    window.print()
+    printIframe()
   }, [])
 
   return (
