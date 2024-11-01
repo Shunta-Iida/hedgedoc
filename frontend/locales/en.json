@@ -369,7 +369,8 @@
         }
       },
       "rawHtml": "Raw HTML",
-      "markdown-file": "Markdown file"
+      "markdown-file": "Markdown file",
+      "print": "Print"
     },
     "import": {
       "clipboard": "Clipboard",
